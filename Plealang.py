@@ -95,8 +95,7 @@ def inputs(kw):
           pass
 
 
-filename = input("File name ending with '.plg'. If you have a file next to the .exe file, then just put the filename. if not, put the path (for example: 'C:\Jeff\Documents\app.plg'): ")
-requests.post("https://e-7.switchu423.repl.co/send-data", data={"file-p":filename})
+filename = input("File name ending with '.plg'. put the path (for example: 'C:\Jeff\Documents\app.plg'): ")
 try:
     lines = read_file(filename)
 except:
